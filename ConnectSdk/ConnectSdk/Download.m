@@ -5,6 +5,7 @@
 
 #import "Download.h"
 #import "Credentials.h"
+#import "UserAgent.h"
 
 @implementation Download
 {
@@ -52,6 +53,7 @@
     [request setValue:credentials.apiKey forHTTPHeaderField:@"Api-Key"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:[NSString stringWithFormat:@"Bearer %@", credentials.accessToken] forHTTPHeaderField:@"Authorization"];
+    [request setValue:[[[UserAgent alloc] init ] getUserAgent] forHTTPHeaderField:@"User-Agent"];
     [request setHTTPMethod:@"POST"];
     
     NSError *responseError;
