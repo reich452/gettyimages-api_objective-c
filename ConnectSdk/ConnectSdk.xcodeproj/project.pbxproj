@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		717A54D019F581B400A34AFC /* UserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 717A54CF19F581B400A34AFC /* UserAgent.m */; };
 		AAEF76F819DC6B7200DD3E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF76F719DC6B7200DD3E84 /* Foundation.framework */; };
 		AAEF76FD19DC6B7200DD3E84 /* ConnectSdk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAEF76FC19DC6B7200DD3E84 /* ConnectSdk.h */; };
 		AAEF76FF19DC6B7200DD3E84 /* ConnectSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF76FE19DC6B7200DD3E84 /* ConnectSdk.m */; };
@@ -49,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		717A54CE19F581B400A34AFC /* UserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAgent.h; sourceTree = "<group>"; };
+		717A54CF19F581B400A34AFC /* UserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAgent.m; sourceTree = "<group>"; };
 		AAEF76F419DC6B7200DD3E84 /* libConnectSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConnectSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEF76F719DC6B7200DD3E84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAEF76FB19DC6B7200DD3E84 /* ConnectSdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConnectSdk-Prefix.pch"; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		AAEF76F919DC6B7200DD3E84 /* ConnectSdk */ = {
 			isa = PBXGroup;
 			children = (
+				717A54CE19F581B400A34AFC /* UserAgent.h */,
+				717A54CF19F581B400A34AFC /* UserAgent.m */,
 				AAEF772619DC6DF500DD3E84 /* ImageSearch.h */,
 				AAEF772719DC6DF500DD3E84 /* ImageSearch.m */,
 				AAEF772019DC6DCF00DD3E84 /* Download.h */,
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717A54D019F581B400A34AFC /* UserAgent.m in Sources */,
 				AAEF772419DC6DCF00DD3E84 /* Download.m in Sources */,
 				AAEF771F19DC6DAD00DD3E84 /* Credentials.m in Sources */,
 				AAEF772819DC6DF500DD3E84 /* ImageSearch.m in Sources */,

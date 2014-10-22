@@ -6,6 +6,7 @@
 
 #import "ImageSearch.h"
 #import "Credentials.h"
+#import "UserAgent.h"
 
 @implementation ImageSearch
 {
@@ -216,6 +217,7 @@
     [request setValue:credentials.apiKey forHTTPHeaderField:@"Api-Key"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:[NSString stringWithFormat:@"Bearer %@", credentials.accessToken] forHTTPHeaderField:@"Authorization"];
+    [request setValue:[[[UserAgent alloc] init ] getUserAgent] forHTTPHeaderField:@"User-Agent"];
     [request setHTTPMethod:@"GET"];
     
     NSError *responseError;

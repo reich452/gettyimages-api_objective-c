@@ -4,6 +4,7 @@
 //
 
 #import "Credentials.h"
+#import "UserAgent.h"
 
 @implementation Credentials
 {
@@ -51,6 +52,7 @@
     
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:[[[UserAgent alloc] init ] getUserAgent] forHTTPHeaderField:@"User-Agent"];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:[requestBody dataUsingEncoding:NSUTF8StringEncoding]];
     
