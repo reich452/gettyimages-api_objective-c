@@ -21,7 +21,7 @@ This solution contains two projects
 * Add the following code to your project.
 
 ```
-#import "ConnnectSdk.h"
+#import "ConnectSdk.h"
 #import "ImageSearch.h"
 
 - (void) execute{
