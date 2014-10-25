@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		717A54D019F581B400A34AFC /* UserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 717A54CF19F581B400A34AFC /* UserAgent.m */; };
+		AA05393219FB62110098C53E /* FluentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05393119FB62110098C53E /* FluentRequest.m */; };
 		AAEF76F819DC6B7200DD3E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF76F719DC6B7200DD3E84 /* Foundation.framework */; };
 		AAEF76FD19DC6B7200DD3E84 /* ConnectSdk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAEF76FC19DC6B7200DD3E84 /* ConnectSdk.h */; };
 		AAEF76FF19DC6B7200DD3E84 /* ConnectSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF76FE19DC6B7200DD3E84 /* ConnectSdk.m */; };
@@ -52,6 +53,8 @@
 /* Begin PBXFileReference section */
 		717A54CE19F581B400A34AFC /* UserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAgent.h; sourceTree = "<group>"; };
 		717A54CF19F581B400A34AFC /* UserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAgent.m; sourceTree = "<group>"; };
+		AA05393019FB62110098C53E /* FluentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluentRequest.h; sourceTree = "<group>"; };
+		AA05393119FB62110098C53E /* FluentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluentRequest.m; sourceTree = "<group>"; };
 		AAEF76F419DC6B7200DD3E84 /* libConnectSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConnectSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEF76F719DC6B7200DD3E84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAEF76FB19DC6B7200DD3E84 /* ConnectSdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConnectSdk-Prefix.pch"; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 		AAEF76F919DC6B7200DD3E84 /* ConnectSdk */ = {
 			isa = PBXGroup;
 			children = (
+				AA05393019FB62110098C53E /* FluentRequest.h */,
+				AA05393119FB62110098C53E /* FluentRequest.m */,
 				717A54CE19F581B400A34AFC /* UserAgent.h */,
 				717A54CF19F581B400A34AFC /* UserAgent.m */,
 				AAEF772619DC6DF500DD3E84 /* ImageSearch.h */,
@@ -263,6 +268,7 @@
 				AAEF771F19DC6DAD00DD3E84 /* Credentials.m in Sources */,
 				AAEF772819DC6DF500DD3E84 /* ImageSearch.m in Sources */,
 				AAEF772519DC6DCF00DD3E84 /* ImageDetail.m in Sources */,
+				AA05393219FB62110098C53E /* FluentRequest.m in Sources */,
 				AAEF76FF19DC6B7200DD3E84 /* ConnectSdk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

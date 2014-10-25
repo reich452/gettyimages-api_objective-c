@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "UserAgent.h"
 
-#define CONNECTSDK_USERAGENT_TEMPLATE   @"ConnectSDK/1.0.1 (%@ %@)"
+#define CONNECTSDK_USERAGENT_TEMPLATE   @"ConnectSDK/1.0.2 (%@ %@)"
 
 @implementation UserAgent
 {
