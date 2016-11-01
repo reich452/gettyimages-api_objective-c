@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,7 @@
 		AAEF76F819DC6B7200DD3E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF76F719DC6B7200DD3E84 /* Foundation.framework */; };
 		AAEF76FD19DC6B7200DD3E84 /* ConnectSdk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AAEF76FC19DC6B7200DD3E84 /* ConnectSdk.h */; };
 		AAEF76FF19DC6B7200DD3E84 /* ConnectSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF76FE19DC6B7200DD3E84 /* ConnectSdk.m */; };
-		AAEF770619DC6B7200DD3E84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF770519DC6B7200DD3E84 /* XCTest.framework */; };
 		AAEF770719DC6B7200DD3E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF76F719DC6B7200DD3E84 /* Foundation.framework */; };
-		AAEF770919DC6B7200DD3E84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF770819DC6B7200DD3E84 /* UIKit.framework */; };
 		AAEF770C19DC6B7200DD3E84 /* libConnectSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF76F419DC6B7200DD3E84 /* libConnectSdk.a */; };
 		AAEF771219DC6B7200DD3E84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAEF771019DC6B7200DD3E84 /* InfoPlist.strings */; };
 		AAEF771F19DC6DAD00DD3E84 /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEF771E19DC6DAD00DD3E84 /* Credentials.m */; };
@@ -61,8 +59,6 @@
 		AAEF76FC19DC6B7200DD3E84 /* ConnectSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectSdk.h; sourceTree = "<group>"; };
 		AAEF76FE19DC6B7200DD3E84 /* ConnectSdk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectSdk.m; sourceTree = "<group>"; };
 		AAEF770419DC6B7200DD3E84 /* ConnectSdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectSdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAEF770519DC6B7200DD3E84 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AAEF770819DC6B7200DD3E84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		AAEF770F19DC6B7200DD3E84 /* ConnectSdkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConnectSdkTests-Info.plist"; sourceTree = "<group>"; };
 		AAEF771119DC6B7200DD3E84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AAEF771D19DC6DAD00DD3E84 /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
@@ -92,9 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEF770619DC6B7200DD3E84 /* XCTest.framework in Frameworks */,
 				AAEF770C19DC6B7200DD3E84 /* libConnectSdk.a in Frameworks */,
-				AAEF770919DC6B7200DD3E84 /* UIKit.framework in Frameworks */,
 				AAEF770719DC6B7200DD3E84 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				AAEF76F719DC6B7200DD3E84 /* Foundation.framework */,
-				AAEF770519DC6B7200DD3E84 /* XCTest.framework */,
-				AAEF770819DC6B7200DD3E84 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,11 +218,11 @@
 		AAEF76EC19DC6B7200DD3E84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Steve;
 			};
 			buildConfigurationList = AAEF76EF19DC6B7200DD3E84 /* Build configuration list for PBXProject "ConnectSdk" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -323,6 +315,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -339,7 +332,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.11;
 			};
 			name = Debug;
 		};
@@ -369,7 +362,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.11;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -413,6 +406,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ConnectSdkTests/ConnectSdkTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ProvidingChoice.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -429,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ConnectSdk/ConnectSdk-Prefix.pch";
 				INFOPLIST_FILE = "ConnectSdkTests/ConnectSdkTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ProvidingChoice.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};

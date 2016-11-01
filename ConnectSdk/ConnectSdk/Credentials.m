@@ -63,11 +63,12 @@
     NSLog(@"calling Token...");
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&responseError];
     
+    
     //DEBUG: LOG OUT THE REPONSE
-    //    NSLog(@"===================================================");
-    //    NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    //    NSLog(@"RESPONSE:\n%@",responseString);
-    //    NSLog(@"===================================================");
+        NSLog(@"===================================================");
+        NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSLog(@"RESPONSE:\n%@",responseString);
+        NSLog(@"===================================================");
     
     // CHECK FOR RESPONSE ERROR
     if (responseError)

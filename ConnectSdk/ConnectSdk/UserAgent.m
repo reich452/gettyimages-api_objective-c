@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "UserAgent.h"
 
 #define CONNECTSDK_USERAGENT_TEMPLATE   @"ConnectSDK/1.0.2 (%@ %@)"
@@ -38,8 +37,10 @@
 {
     if (userAgent == nil) {
         NSString *agent         = CONNECTSDK_USERAGENT_TEMPLATE;
-        NSString *systemName    = [UIDevice currentDevice].systemName;
-        NSString *systemVersion = [UIDevice currentDevice].systemVersion;
+        NSString *systemName    = [NSHost currentHost].localizedName;
+        NSString *systemVersion = @"Unknown";
+        //NSString *systemName    = [UIDevice currentDevice].systemName;
+        //NSString *systemVersion = [UIDevice currentDevice].systemVersion;
         userAgent = [NSString stringWithFormat:agent, systemName, systemVersion];
     }
     return userAgent;
